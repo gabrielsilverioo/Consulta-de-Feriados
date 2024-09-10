@@ -6,7 +6,9 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 public class Feriado
-{
+{   
+    // Classe para armazenar os dados dos feriados
+    
     [JsonPropertyName("date")]
     public DateTime Date { get; set; }
 
@@ -36,14 +38,17 @@ public class Feriado
 }
 
 public class Program
-{
-    public static async Task Main(string[] args)
+{ 
+      public static async Task Main(string[] args)
     {   
+      // Solicitando ao usuário que informe o ano e a sigla do país desejado
+
         System.Console.WriteLine("Informe o ano desejado: ");
         int ano = int.Parse(Console.ReadLine() ?? string.Empty);
         System.Console.WriteLine("Informe a sigla do país desejado: ");
         string pais = Console.ReadLine() ?? string.Empty;
 
+        // Buscar os feriados do ano e da sigla informados
         string url = $"https://date.nager.at/api/v3/PublicHolidays/{ano}/{pais.ToUpper()}";
 
         using (HttpClient client = new HttpClient())
