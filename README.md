@@ -1,4 +1,4 @@
-# Consulta de Feriados Públicos
+# Consulta de Feriados 
 
 Este projeto é um exemplo de aplicação em **C#** que consome a API [Nager.Date](https://date.nager.at/), que retorna feriados públicos de diferentes países para um ano informado. A aplicação solicita ao usuário o ano e a sigla de um país e exibe os feriados públicos correspondentes.
 
