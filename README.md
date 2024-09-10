@@ -60,5 +60,14 @@ Dia de Ano Novo - 01-01-2024
 
 -------------------------------------------------------------------------------
 Carnaval - 12-02-2024
+```
+## Estrutura do Projeto
 
+```bash
+
+├── Feriado.cs                    # Classe para deserializar os dados da API
+├── Program.cs                    # Código principal que faz a requisição e exibe os feriados
+├── projeto-feriados-publicos.sln # Arquivo de solução do projeto
+└── README.md                     # Documentação do projeto
+```
 
